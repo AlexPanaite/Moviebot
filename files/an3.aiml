@@ -1,0 +1,2130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <topic name = "2010">
+        
+	 <category>
+         <pattern>2010 m</pattern>
+         <template>Alege durata filmului:
+         <button>
+            <text>1-2h</text>
+            <postback>1h</postback>
+        </button>
+        <button>
+            <text>Peste 2h</text>
+            <postback>2h</postback>
+        </button>
+        <think><set name = "topic">2010 m</set></think>
+         </template>
+     </category>
+     
+     
+    <category>
+         <pattern>2010 d</pattern>
+         <template>Alege durata filmului:
+         <button>
+            <text>1-2h</text>
+            <postback>1h</postback>
+        </button>
+        <button>
+            <text>Peste 2h</text>
+            <postback>2h</postback>
+        </button>
+        <think><set name = "topic">2010 d</set></think>
+         </template>
+     </category>
+             
+             
+    <topic name = "2010 m">
+        
+         <category>
+	             <pattern>1h</pattern>
+	             <template>Alege genul filmului:
+	             <button>
+                    <text>Thriller</text>
+                    <postback>thriller</postback>
+                </button>
+                <button>
+                    <text>Sci-Fi</text>
+                    <postback>scifi</postback>
+                </button>
+                <button>
+                    <text>Drama</text>
+                    <postback>drama</postback>
+                </button>
+                <button>
+                    <text>Comedy</text>
+                    <postback>comedy</postback>
+                </button>
+                <button>
+                    <text>Fantasy</text>
+                    <postback>fantasy</postback>
+                </button>
+                <think><set name = "topic">2010 m 1h</set></think>
+                 </template>
+             </category>
+             
+             <category>
+	             <pattern>2h</pattern>
+	             <template>Alege genul filmului:
+                <button>
+                    <text>Sci-Fi</text>
+                    <postback>scifi</postback>
+                </button>
+                <button>
+                    <text>Drama</text>
+                    <postback>drama</postback>
+                </button>
+                <button>
+                    <text>Comedy</text>
+                    <postback>comedy</postback>
+                </button>
+            
+                <think><set name = "topic">2010 m 2h</set></think>
+                 </template>
+             </category>
+        
+        <topic name = "2010 m 1h">       
+                
+                <category>
+                     <pattern>thriller</pattern>
+                     <template>
+                Îți recomand filmul "Venom".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Venom</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Venom</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Venom</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BNzAwNzUzNjY4MV5BMl5BanBnXkFtZTgwMTQ5MzM0NjM@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Venom</title>
+                        <subtitle> Action, Sci-Fi, Thriller </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1270797/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>drama</pattern>
+                     <template>
+                Îți recomand filmul "Fantastic Four".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Fantastic Four</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Fantastic Four</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Fantastic Four</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTk0OTMyMDA0OF5BMl5BanBnXkFtZTgwMzY5NTkzNTE@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Fantastic Four</title>
+                        <subtitle> Action, Adventure, Drama </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1502712/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>scifi</pattern>
+                     <template>
+                Îți recomand filmul "X-Men: Dark Phoenix".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>XMen Dark Phoenix</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">X-Men: Dark Phoenix</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>XMen Dark Phoenix</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMmZmYTgwZGItNDIxMS00MmRkLWEzODQtYTllNzM0ZWE1NmQ5XkEyXkFqcGdeQXVyODQzNTE3ODc@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>X-Men: Dark Phoenix</title>
+                        <subtitle> Action, Adventure, Sci-Fi </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt6565702/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>comedy</pattern>
+                    <template>De cine iti place mai mult ?
+                    <button>
+                    <text>Antman</text>
+                    <postback>antman</postback>
+                </button>
+                <button>
+                    <text>Deadpool</text>
+                    <postback>deadpool</postback>
+                </button>
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>antman</pattern>
+                    <template>Vrei ca filmul sa fie premiat?
+                    <reply>
+                        <text>Da</text>
+                        <postback>dant</postback>
+                    </reply>
+                    <reply>
+                        <text>Nu</text>
+                        <postback>nu</postback>
+                    </reply>
+                    </template>
+                </category>
+                
+                 <category>
+                     <pattern>dant</pattern>
+                     <template>
+                Îți recomand filmul "Ant-Man".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>AntMan</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Ant-Man</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>AntMan</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Ant-Man</title>
+                        <subtitle> Action, Adventure, Comedy </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt0478970/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>nu</pattern>
+                     <template>
+                Îți recomand filmul "Ant-Man and the Wasp".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>AntMan and the Wasp</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Ant-Man and the Wasp</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>AntMan and the Wasp</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BYjcyYTk0N2YtMzc4ZC00Y2E0LWFkNDgtNjE1MzZmMGE1YjY1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Ant-Man and the Wasp</title>
+                        <subtitle> Action, Adventure, Comedy </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt5095030/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+    
+                <category>
+                    <pattern>deadpool</pattern>
+                    <template>Alege regizorul:
+                    <reply>
+                        <text>David Leitch</text>
+                        <postback>david</postback>
+                    </reply>
+                    <reply>
+                        <text>Tim Miller</text>
+                        <postback>tim</postback>
+                    </reply>
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>david</pattern>
+                     <template>
+                Îți recomand filmul "Deadpool 2".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Deadpool 2</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Deadpool 2</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Deadpool 2</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BNjk1Njk3YjctMmMyYS00Y2I4LThhMzktN2U0MTMyZTFlYWQ5XkEyXkFqcGdeQXVyODM2ODEzMDA@._V1_UY268_CR43,0,182,268_AL_.jpg</image>
+                        <title>Deadpool 2</title>
+                        <subtitle> Action, Adventure, Comedy </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt5463162/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+    
+                 <category>
+                    <pattern>deadpool</pattern>
+                    <template>Alege regizorul:
+                    <reply>
+                        <text>David Leitch</text>
+                        <postback>david</postback>
+                    </reply>
+                    <reply>
+                        <text>Tim Miller</text>
+                        <postback>tim</postback>
+                    </reply>
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>tim</pattern>
+                     <template>
+                Îți recomand filmul "Deadpool".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Deadpool</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Deadpool</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Deadpool</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Deadpool</title>
+                        <subtitle> Action, Adventure, Comedy </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1431045/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+    
+                <category>
+                    <pattern>fantasy</pattern>
+                    <template>De cine iti place mai mult ?
+                    <button>
+                    <text>Thor</text>
+                    <postback>thor</postback>
+                </button>
+                <button>
+                    <text>Doctor Strange</text>
+                    <postback>doctor</postback>
+                </button>
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>doctor</pattern>
+                     <template>
+                Îți recomand filmul "Doctor Strange".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Doctor Strange</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Doctor Strange</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Doctor Strange</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Doctor Strange</title>
+                        <subtitle> Action, Adventure, Fantasy </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1211837/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>thor</pattern>
+                    <template>Alege regizorul:
+                    <reply>
+                        <text>Alan Taylor</text>
+                        <postback>alan</postback>
+                    </reply>
+                    <reply>
+                        <text>Kenneth Branagh</text>
+                        <postback>ken</postback>
+                    </reply>
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>alan</pattern>
+                     <template>
+                Îți recomand filmul "Thor: The Dark World".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Thor The Dark World</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Thor: The Dark World</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Thor The Dark World</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTQyNzAwOTUxOF5BMl5BanBnXkFtZTcwMTE0OTc5OQ@@._V1_UY268_CR3,0,182,268_AL_.jpg</image>
+                        <title>Thor: The Dark World</title>
+                        <subtitle> Action, Adventure, Fantasy </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1981115/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>alan</pattern>
+                     <template>
+                Îți recomand filmul "Thor: The Dark World".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Thor The Dark World</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Thor: The Dark World</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Thor The Dark World</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTQyNzAwOTUxOF5BMl5BanBnXkFtZTcwMTE0OTc5OQ@@._V1_UY268_CR3,0,182,268_AL_.jpg</image>
+                        <title>Thor: The Dark World</title>
+                        <subtitle> Action, Adventure, Fantasy </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1981115/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>ken</pattern>
+                     <template>
+                Îți recomand filmul "Thor".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Thor1</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Thor</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Thor1</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Thor</title>
+                        <subtitle> Action, Adventure, Fantasy </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt0800369/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+            </topic>   
+    
+         <topic name = "2010 m 2h">
+             
+             <category>
+                    <pattern>comedy</pattern>
+                    <template>De cine iti place mai mult ?
+                    <button>
+                    <text>Thor</text>
+                    <postback>thor</postback>
+                </button>
+                <button>
+                    <text>Guardians of the Galaxy</text>
+                    <postback>guard</postback>
+                </button>
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>thor</pattern>
+                     <template>
+                Îți recomand filmul "Thor: Ragnarokr".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Thor Ragnarok</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Thor: Ragnarok</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Thor Ragnarok</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMjMyNDkzMzI1OF5BMl5BanBnXkFtZTgwODcxODg5MjI@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Thor: Ragnarok</title>
+                        <subtitle> Action, Adventure, Comedy</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt3501632/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                 <category>
+                    <pattern>guard</pattern>
+                    <template>Filmul sa fie din 2014 sau 2017 ?
+                    <reply>
+                    <text>2014</text>
+                    <postback>2014</postback>
+                </reply>
+                <reply>
+                    <text>2017</text>
+                    <postback>2017</postback>
+                </reply>
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>2014</pattern>
+                     <template>
+                Îți recomand filmul "Guardians of the Galaxy".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Guardians of the Galaxy</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Guardians of the Galaxy</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Guardians of the Galaxy</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTAwMjU5OTgxNjZeQTJeQWpwZ15BbWU4MDUxNDYxODEx._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Guardians of the Galaxy</title>
+                        <subtitle> Action, Adventure, Comedy</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt2015381/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>2017</pattern>
+                     <template>
+                Îți recomand filmul "Guardians of the Galaxy Vol. 2".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Guardians of the Galaxy Vol 2</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Guardians of the Galaxy Vol. 2</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Guardians of the Galaxy Vol 2</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Guardians of the Galaxy Vol. 2</title>
+                        <subtitle> Action, Adventure, Comedy</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt3896198/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                    <pattern>scifi</pattern>
+                    <template>Vrei filme cu X-Men ?
+                    <reply>
+                    <text>Da</text>
+                    <postback>dax</postback>
+                </reply>
+                <reply>
+                    <text>Nu</text>
+                    <postback>nu</postback>
+                </reply>
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>dax</pattern>
+                    <template>Alege ratingul metascore:
+                    <button>
+                        <text>Bun</text>
+                        <postback>bun</postback>
+                    </button>
+                    <button>
+                        <text>Mediu</text>
+                        <postback>mediu</postback>
+                    </button>
+                    </template>
+                </category>
+                
+                
+                <category>
+                    <pattern>bun</pattern>
+                    <template>Alege regizorul filmului:
+                    <button>
+                        <text>Matthew Vaughn</text>
+                        <postback>mat</postback>
+                    </button>
+                    <button>
+                        <text>James Mangol</text>
+                        <postback>james</postback>
+                    </button>
+                    <button>
+                        <text>Bryan Singe</text>
+                        <postback>bryan</postback>
+                    </button>
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>mat</pattern>
+                     <template>
+                Îți recomand filmul "X-Men: First Class".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>XMen First Class</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">X-Men: First Class</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>XMen First Class</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTg5OTMxNzk4Nl5BMl5BanBnXkFtZTcwOTk1MjAwNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>X-Men: First Class</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1270798/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>james</pattern>
+                     <template>
+                Îți recomand filmul "The Wolverine".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>The Wolverine</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">The Wolverine</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>The Wolverine</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BNzg1MDQxMTQ2OF5BMl5BanBnXkFtZTcwMTk3MjAzOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>The Wolverine</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1430132/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                 <category>
+                     <pattern>bryan</pattern>
+                     <template>
+                Îți recomand filmul "X-Men: Days of Future Past".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>XMen Days of Future Past</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">X-Men: Days of Future Past</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>XMen Days of Future Past</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BZGIzNWYzN2YtMjcwYS00YjQ3LWI2NjMtOTNiYTUyYjE2MGNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>X-Men: Days of Future Past</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1877832/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>mediu</pattern>
+                     <template>
+                Îți recomand filmul "X-Men: Apocalypse".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>XMen Apocalypse</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">X-Men: Apocalypse</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>XMen Apocalypse</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMjU1ODM1MzYxN15BMl5BanBnXkFtZTgwOTA4NDE2ODE@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>X-Men: Apocalypse</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt3385516/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                    <pattern>nu</pattern>
+                    <template>
+                        De cine iti place mai mult ?
+                        <button>
+                            <text>Spiderman</text>
+                            <postback>spiderman</postback>
+                        </button>
+                        <button>
+                            <text>Iron Man</text>
+                            <postback>iron</postback>
+                        </button>
+                        <button>
+                            <text>Captain America</text>
+                            <postback>america</postback>
+                        </button>
+                        <button>
+                            <text>Captain Marvel</text>
+                            <postback>marvel</postback>
+                        </button>
+                        <button>
+                            <text>Black Panther</text>
+                            <postback>black</postback>
+                        </button>
+                        <button>
+                            <text>Imi plac toți</text>
+                            <postback>toti</postback>
+                        </button>
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>spiderman</pattern>
+                    <template>
+                        Vrei sa fie Iron Man in film ?
+                        <reply>
+                            <text>Da</text>
+                            <postback>da1</postback>
+                        </reply>
+                        <reply>
+                            <text>Nu</text>
+                            <postback>nu1</postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                 <category>
+                     <pattern>da1</pattern>
+                     <template>
+                Îți recomand filmul "Spider-Man: Homecoming".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>SpiderMan Homecoming</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Spider-Man: Homecoming</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>SpiderMan Homecoming</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Spider-Man: Homecoming</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt2250912/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>nu1</pattern>
+                     <template>
+                Îți recomand filmul "Spider-Man: Far From Home".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>SpiderMan Far From Home</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Spider-Man: Far From Home</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>SpiderMan Far From Home</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMGZlNTY1ZWUtYTMzNC00ZjUyLWE0MjQtMTMxN2E3ODYxMWVmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Spider-Man: Far From Home</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt6320628/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>iron</pattern>
+                     <template>
+                Îți recomand filmul "Iron Man 3".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Iron Man 3</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Iron Man 3</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Iron Man 3</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMjE5MzcyNjk1M15BMl5BanBnXkFtZTcwMjQ4MjcxOQ@@._V1_UY268_CR3,0,182,268_AL_.jpg</image>
+                        <title>Iron Man 3</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1300854/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                    <pattern>america</pattern>
+                    <template>
+                        Alege regizorul:
+                        <reply>
+                            <text>Joe Johnston</text>
+                            <postback>joe</postback>
+                        </reply>
+                        <reply>
+                            <text>Anthony Russo,Joe Russo</text>
+                            <postback>russo </postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>joe</pattern>
+                     <template>
+                Îți recomand filmul "Captain America: The First Avenger".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Captain America The First Avenger</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Captain America: The First Avenger</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Captain America The First Avenger</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTYzOTc2NzU3N15BMl5BanBnXkFtZTcwNjY3MDE3NQ@@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Captain America: The First Avenger</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt0458339/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>russo</pattern>
+                    <template>
+                        Vrei sa fie Iron Man in film ?
+                        <reply>
+                            <text>Da</text>
+                            <postback>da2</postback>
+                        </reply>
+                        <reply>
+                            <text>Nu</text>
+                            <postback>nu2</postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                 <category>
+                     <pattern>da2</pattern>
+                     <template>
+                Îți recomand filmul "Captain America: Civil Warr".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Captain America Civil War</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Captain America Civil War</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Captain America Civil War</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMjQ0MTgyNjAxMV5BMl5BanBnXkFtZTgwNjUzMDkyODE@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Captain America: Civil Warr</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt3498820/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                 <category>
+                     <pattern>nu2</pattern>
+                     <template>
+                Îți recomand filmul "Captain America The Winter Soldier".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Captain America The Winter Soldier</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Captain America: The Winter Soldier</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Captain America The Winter Soldier</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMzA2NDkwODAwM15BMl5BanBnXkFtZTgwODk5MTgzMTE@._V1_UY268_CR1,0,182,268_AL_.jpg</image>
+                        <title>Captain America: The Winter Soldier</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1843866/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>marvel</pattern>
+                     <template>
+                Îți recomand filmul "Captain Marvel".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Captain Marvel</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Captain Marvel</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Captain Marvel</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Captain Marvel</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt4154664/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>black</pattern>
+                     <template>
+                Îți recomand filmul "Black Panther".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Black Panther</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Black Panther</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Black Panther</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Black Panther</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1825683/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>toti</pattern>
+                    <template>
+                        Vrei ca filmul sa fie peste 3 ore?
+                        <reply>
+                            <text>Da</text>
+                            <postback>da3</postback>
+                        </reply>
+                        <reply>
+                            <text>Nu</text>
+                            <postback>nu3</postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                 <category>
+                     <pattern>da3</pattern>
+                     <template>
+                Îți recomand filmul "Avengers: Endgame".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Avengers Endgame</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Avengers: Endgame</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Avengers Endgame</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Avengers: Endgame</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt4154796/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>nu3</pattern>
+                    <template>
+                        Alege regizorul:
+                        <reply>
+                            <text>Joss Whedon</text>
+                            <postback>joss</postback>
+                        </reply>
+                        <reply>
+                            <text>Anthony Russo,Joe Russo</text>
+                            <postback>russo1</postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>russo1</pattern>
+                     <template>
+                Îți recomand filmul "Avengers: Infinity War".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Avengers Infinity War</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Avengers Infinity War</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Avengers Infinity War</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Avengers: Infinity War</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt4154756/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>joss</pattern>
+                    <template>
+                        Vrei ca filmul sa fie din 2012 sau 2015?
+                        <reply>
+                            <text>2012</text>
+                            <postback>2012</postback>
+                        </reply>
+                        <reply>
+                            <text>2015</text>
+                            <postback>2015</postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                 <category>
+                     <pattern>2012</pattern>
+                     <template>
+                Îți recomand filmul "The Avengers".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>The Avengersr</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">The Avengers</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>The Avengers</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>The Avengers</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt0848228/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                 <category>
+                     <pattern>2015</pattern>
+                     <template>
+                Îți recomand filmul "Avengers: Age of Ultron".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Avengers Age of Ultron</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Avengers: Age of Ultron</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Avengers Age of Ultron</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTM4OGJmNWMtOTM4Ni00NTE3LTg3MDItZmQxYjc4N2JhNmUxXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Avengers: Age of Ultron</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt2395427/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                 <category>
+                     <pattern>drama</pattern>
+                     <template>
+                Îți recomand filmul "Logan".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Logan</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Logan</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Logan</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BYzc5MTU4N2EtYTkyMi00NjdhLTg3NWEtMTY4OTEyMzJhZTAzXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Logan</title>
+                        <subtitle> Action, Drama, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt3315342/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+            </topic>                   
+            
+    
+        </topic>
+        
+    <topic name = "2010 d">
+        
+            <category>
+	             <pattern>1h</pattern>
+	             <template>Alege genul filmului:
+	             <button>
+                    <text>Crime</text>
+                    <postback>crime</postback>
+                </button>
+                <button>
+                    <text>Sci-Fi</text>
+                    <postback>scifi</postback>
+                </button>
+                
+                <think><set name = "topic">2010 d 1h</set></think>
+                 </template>
+             </category>
+             
+             <category>
+	             <pattern>2h</pattern>
+	             <template>Alege genul filmului:
+                <button>
+                    <text>Thriller</text>
+                    <postback>thriller</postback>
+                </button>
+                <button>
+                    <text>Fantasy</text>
+                    <postback>fantasy</postback>
+                </button>
+                <button>
+                    <text>Comedy</text>
+                    <postback>comedy</postback>
+                </button>
+                <button>
+                    <text>Adventure</text>
+                    <postback>adventure</postback>
+                </button>
+            
+                <think><set name = "topic">2010 d 2h</set></think>
+                 </template>
+             </category>
+        
+        
+        <topic name = "2010 d 1h">
+            
+            
+            <category>
+                     <pattern>crime</pattern>
+                     <template>
+                Îți recomand filmul "Birds of Prey".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Birds of Prey</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Birds of Prey</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Birds of Prey</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMzQ3NTQxMjItODBjYi00YzUzLWE1NzQtZTBlY2Y2NjZlNzkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Birds of Prey</title>
+                        <subtitle> Action, Adventure, Crime</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt7713068/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>scifi</pattern>
+                     <template>
+                Îți recomand filmul "Green Lantern".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Green Lantern</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Green Lantern</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Green Lantern</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTMyMTg3OTM5Ml5BMl5BanBnXkFtZTcwNzczMjEyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Green Lantern</title>
+                        <subtitle> Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1133985/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+            
+            </topic>
+        
+        
+        <topic name = "2010 d 2h">
+            
+            
+            <category>
+                     <pattern>thriller</pattern>
+                     <template>
+                Îți recomand filmul "Joker".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Joker</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Joker</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Joker</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Joker</title>
+                        <subtitle> Crime, Drama, Thriller </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt7286456/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>comedy</pattern>
+                     <template>
+                Îți recomand filmul "Shazam!".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Shazam</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Shazam!</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Shazam</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BYTE0Yjc1NzUtMjFjMC00Y2I3LTg3NGYtNGRlMGJhYThjMTJmXkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Shazam!</title>
+                        <subtitle> Action, Adventure, Comedy </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt0448115/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                    <pattern>fantasy</pattern>
+                    <template>
+                        Alege ratingul metascore:
+                        <reply>
+                            <text>Bun</text>
+                            <postback>bun</postback>
+                        </reply>
+                        <reply>
+                            <text>Mediu</text>
+                            <postback>mediu</postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>bun</pattern>
+                    <template>
+                        Vrei ca Wonder Women sa fie in film?
+                        <reply>
+                            <text>Da</text>
+                            <postback>daw</postback>
+                        </reply>
+                        <reply>
+                            <text>Nu</text>
+                            <postback>nuw</postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>daw</pattern>
+                     <template>
+                Îți recomand filmul "Wonder Woman".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Wonder Woman</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Wonder Woman</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Wonder Woman</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BNDFmZjgyMTEtYTk5MC00NmY0LWJhZjktOWY2MzI5YjkzODNlXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Wonder Woman</title>
+                        <subtitle>Action, Adventure, Fantasy  </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt0451279/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                 <category>
+                     <pattern>nuw</pattern>
+                     <template>
+                Îți recomand filmul "Suicide Squad".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Suicide Squad</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Suicide Squad</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Suicide Squad</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMjM1OTMxNzUyM15BMl5BanBnXkFtZTgwNjYzMTIzOTE@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Suicide Squad</title>
+                        <subtitle>Action, Adventure, Fantasy  </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1386697/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                    <pattern>mediu</pattern>
+                    <template>
+                        Vrei ca Batman sa fie in film ?
+                        <reply>
+                            <text>Da</text>
+                            <postback>dab</postback>
+                        </reply>
+                        <reply>
+                            <text>Nu</text>
+                            <postback>nub</postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>dab</pattern>
+                     <template>
+                Îți recomand filmul "Justice League".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Justice League</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Justice League</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Justice League</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BYWVhZjZkYTItOGIwYS00NmRkLWJlYjctMWM0ZjFmMDU4ZjEzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Justice League</title>
+                        <subtitle>Action, Adventure, Fantasy  </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt0974015/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>nub</pattern>
+                     <template>
+                Îți recomand filmul "Aquaman".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Aquaman</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Aquaman</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Aquaman</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Aquaman</title>
+                        <subtitle>Action, Adventure, Fantasy </subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1477834/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                    <pattern>adventure</pattern>
+                    <template>
+                        Pe langa genul Adventure, ai vrea sa fie si genul Sci-Fi?
+                        <reply>
+                            <text>Da</text>
+                            <postback>dasf</postback>
+                        </reply>
+                        <reply>
+                            <text>Nu</text>
+                            <postback>nusf</postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                <category>
+                     <pattern>nusf</pattern>
+                     <template>
+                Îți recomand filmul "The Dark Knight Rises".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>The Dark Knight Rises</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">The Dark Knight Rises</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>The Dark Knight Rises</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>The Dark Knight Rises</title>
+                        <subtitle>Action, Adventure</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt1345836/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                <category>
+                    <pattern>dasf</pattern>
+                    <template>
+                        Vrei ca Batman sa fie in film?
+                        <reply>
+                            <text>Da</text>
+                            <postback>davr</postback>
+                        </reply>
+                        <reply>
+                            <text>Nu</text>
+                            <postback>nuvr</postback>
+                        </reply>
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>nuvr</pattern>
+                     <template>
+                Îți recomand filmul "Man of Steel".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Man of Steel</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Man of Steel</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Man of Steel</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Man of Steel</title>
+                        <subtitle>Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt0770828/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+                <category>
+                     <pattern>davr</pattern>
+                     <template>
+                Îți recomand filmul "Batman vs Superman: Dawn of Justice".
+                <button>
+                    <text>Doresc informații despre acest film.</text>
+                    <postback>Batman vs Superman Dawn of Justice</postback>
+                </button>
+                <button>
+                    <text>Doresc să îmi recomandați alt film.</text>
+                     <postback>recomandare</postback>
+                      </button>
+                <think><set name="film">Batman vs Superman: Dawn of Justice</set></think>
+            </template>
+                 </category>
+            <category>
+                    <pattern>Batman vs Superman Dawn of Justice</pattern>
+                    <template>
+                        
+                    <card>
+                        <image>https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg</image>
+                        <title>Batman vs Superman: Dawn of Justice</title>
+                        <subtitle>Action, Adventure, Sci-Fi</subtitle>
+                        <button>
+                            <text>Vezi Detalii</text>
+                            <url>https://www.imdb.com/title/tt2975590/</url>
+                        </button>
+                        
+                        <button>
+                            <text>Doresc să îmi recomandați alt film.</text>
+                            <postback>recomandare</postback>
+                        </button>
+                        
+                    </card>
+             
+                    </template>
+                </category>
+                
+                
+            
+            </topic>
+        
+        </topic>
+            
+    </topic>         
+</aiml>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+	    <pattern>*</pattern>
+	    <template>Nu știu ce să răspund!</template>
+    </category>
+    
+    <category>
+        <pattern>Buna *</pattern>
+        <template>Buna <set name="buna"><star /></set>! Pentru început aș dori sa știu cum te numești?</template>
+    </category>
+	
+ <category>
+    <pattern>Salut</pattern>
+    <template><srai>Buna</srai></template>
+  </category>
+  
+  <category>
+    <pattern>Hi</pattern>
+    <template><srai>Buna</srai></template>
+  </category>
+  
+  <category>
+    <pattern>Helou</pattern>
+    <template><srai>Buna</srai></template>
+  </category>
+  
+  <category>
+    <pattern>Hei</pattern>
+    <template><srai>Buna</srai></template>
+  </category>
+  
+  <category>
+    <pattern>Hello</pattern>
+    <template><srai>Buna</srai></template>
+  </category>
+  
+   <category>
+    <pattern>Salutare</pattern>
+    <template><srai>Buna</srai></template>
+  </category>
+  
+  <category>
+      <pattern>Buna</pattern>
+      <template>Buna! Pentru început aș dori sa știu cum te numești?</template>
+  </category>
+  	
+  	<category>
+	    <pattern>Ma numesc * </pattern>
+	    <template>Încântat de cunoștință <set name="nume"><star /></set>. Ați dori să începem să găsim un film cu supereroi împreună?</template>
+    </category>
+    
+    	<category>
+	    <pattern>Numele meu este * </pattern>
+	    <template>Încântat de cunoștință <set name="nume"><star /></set>. Ați dori să începem să găsim un film cu supereroi împreună?</template>
+    </category>
+    
+    	<category>
+	    <pattern>Sunt * </pattern>
+	    <template>Încântat de cunoștință <set name="nume"><star /></set>. Ați dori să începem să găsim un film cu supereroi împreună?</template>
+    </category>
+    
+ <category>
+        <pattern>Cine sunt </pattern>
+        <template>
+            <think><set var="verificanume"><get name="nume" /></set></think> 
+            <condition var="verificanume">
+                <li value="unknown">Incă nu te-ai prezentat!</li>
+                <li>Numele tau este <get var="verificanume" />.</li>
+           </condition>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>Cum ma cheama </pattern>
+        <template>
+            <think><set var="verificanume"><get name="nume" /></set></think> 
+            <condition var="verificanume">
+                <li value="unknown">Incă nu te-ai prezentat!</li>
+                <li>Numele tau este <get var="verificanume" />.</li>
+           </condition>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>Care este numele meu </pattern>
+        <template>
+            <think><set var="verificanume"><get name="nume" /></set></think> 
+            <condition var="verificanume">
+                <li value="unknown">Incă nu te-ai prezentat!</li>
+                <li>Numele tau este <get var="verificanume" />.</li>
+           </condition>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>Cum ma numesc</pattern>
+        <template>
+            <think><set var="verificanume"><get name="nume" /></set></think> 
+            <condition var="verificanume">
+                <li value="unknown">Incă nu te-ai prezentat!</li>
+                <li>Numele tau este <get var="verificanume" />.</li>
+           </condition>
+        </template>
+    </category>
+         <category>
+        <pattern>Ce nume am</pattern>
+        <template>
+            <think><set var="verificanume"><get name="nume" /></set></think> 
+            <condition var="verificanume">
+                <li value="unknown">Incă nu te-ai prezentat!</li>
+                <li>Numele tau este <get var="verificanume" />.</li>
+           </condition>
+        </template>
+    </category>
+    
+     <category>
+        <pattern>^ cine esti ^</pattern>
+        <template>
+		Numele meu este <bot name="name" />, iar scopul meu este de a vă ajuta să găsiți un film cu supereroi care sa corespundă cu cerințele dumneavoastră.
+		<br/>Ați dori să începem să găsim un film cu supereroi împreună?
+		</template>
+    </category>
+    
+         <category>
+        <pattern>^ numesti ^</pattern>
+        <template>
+		Numele meu este <bot name="name" />, iar scopul meu este de a vă ajuta să găsiți un film cu supereroi care sa corespundă cu cerințele dumneavoastră.
+		<br/>Ați dori să începem să găsim un film cu supereroi împreună?
+		</template>
+    </category>
+    
+         <category>
+        <pattern>^ numele ^</pattern>
+        <template>
+		Numele meu este <bot name="name" />, iar scopul meu este de a vă ajuta să găsiți un film cu supereroi care sa corespundă cu cerințele dumneavoastră.
+		<br/>Ați dori să începem să găsim un film cu supereroi împreună?
+		</template>
+    </category>
+    
+         <category>
+        <pattern>^ nume ^</pattern>
+        <template>
+		Numele meu este <bot name="name" />, iar scopul meu este de a vă ajuta să găsiți un film cu supereroi care sa corespundă cu cerințele dumneavoastră.
+		<br/>Ați dori să începem să găsim un film cu supereroi împreună?
+		</template>
+    </category>
+    
+        <category>
+	    <pattern>Ce faci </pattern>
+	    <template>Bine, mulțumesc. Ați dori să începem să găsim un film cu supereroi împreună?</template>
+    </category>
+    
+        
+        <category>
+            <pattern>^ nu ^</pattern>
+            <that>Ați dori să începem să găsim un film cu supereroi împreună</that>
+            <template>Îmi pare rău ca nu vă pot ajuta, vă doresc o zi frumoasă în continuare!</template>
+        </category>
+        
+        <category>
+            <pattern>^ da ^</pattern>
+             <that>Ați dori să începem să găsim un film cu supereroi împreună</that>
+            <template>
+            <br/>Între ce ani ați dori sa fie cuprins filmul?
+            
+            <button>
+                <text>Înainte de anul 2000</text>
+                <postback>2000</postback>
+            </button>
+            <button>
+                <text>Între anii 2000-2010</text>
+                <postback>2000 2010</postback>
+            </button>
+            <button>
+                <text>După anul 2010</text>
+                <postback>2010</postback>
+            </button>
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ da ^</pattern>
+             <that>^ recomandare ^</that>
+            <template>
+            <br/>Între ce ani ați dori sa fie cuprins filmul?
+            
+            <button>
+                <text>Înainte de anul 2000</text>
+                <postback>2000</postback>
+            </button>
+            <button>
+                <text>Între anii 2000-2010</text>
+                <postback>2000 2010</postback>
+            </button>
+            <button>
+                <text>După anul 2010</text>
+                <postback>2010</postback>
+            </button>
+            </template>
+        </category>
+    
+     <category>
+    <pattern>recomandare</pattern>
+    <template><srai>da</srai></template>
+  </category>
+  
+  <category>
+	    <pattern>2000</pattern>
+	   <that>^ LT TEXT GT ÎNAINTE DE ANUL 2000 ^</that>
+	    <template>Îți place Marvel sau DC?
+          <button>
+            <text>Marvel</text>
+            <postback>2000m</postback>
+        </button>
+        <button>
+            <text>DC</text>
+            <postback>2000d</postback>
+        </button>
+        
+        <think><set name = "topic">sub2000</set></think>
+        <think> <set name="an">sub2000</set></think>
+	    </template>
+	    
+    </category>
+    
+    <category>
+	    <pattern>2000 2010</pattern>
+	   <that>^ LT TEXT GT ÎNAINTE DE ANUL 2000 ^</that>
+	    <template>Îți place Marvel sau DC?
+          <button>
+            <text>Marvel</text>
+            <postback>2000 2010 m</postback>
+        </button>
+        <button>
+            <text>DC</text>
+            <postback>2000 2010 d</postback>
+        </button>
+        
+        <think><set name = "topic">2000 2010</set></think>
+        <think> <set name="an">2000 2010</set></think>
+	    </template>
+	    
+    </category>
+    
+    <category>
+	    <pattern>2010</pattern>
+	   <that>^ LT TEXT GT ÎNAINTE DE ANUL 2000 ^</that>
+	    <template>Îți place Marvel sau DC?
+          <button>
+            <text>Marvel</text>
+            <postback>2010 m</postback>
+        </button>
+        <button>
+            <text>DC</text>
+            <postback>2010 d</postback>
+        </button>
+        
+        <think><set name = "topic">2010</set></think>
+        <think> <set name="an">2010</set></think>
+	    </template>
+	    
+    </category>
+
+</aiml>
